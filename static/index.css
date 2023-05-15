@@ -1,3 +1,55 @@
+
 h2{
-    border-bottom: 7px double black;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    color: rgb(185, 99, 99) ;
+    font-size: 50px;
+}
+
+.sidenav {
+    width: 140px;
+    position: fixed;
+    z-index: 1;
+    top: auto;
+    left: auto;
+    background: rgb(233, 228, 225);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(185, 99, 99) ;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+    margin-left: 150px; /* Same width as the sidebar + left position in px */
+    font-size: 22px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15x;}
+    .sidenav a {font-size: 18px;}
+}
+
+img {
+    float: right;
+    margin: 5px;
+    padding-left: 15px;
+}
+
+.main p{
+    text-align: justify;
+    font-size: 20px;
 }
